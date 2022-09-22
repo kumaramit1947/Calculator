@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="css/calc.css" rel="stylesheet">
+    <script src="script/calc.js" rel="javascript" type="text/javascript" defer></script>
+</head>
+<body>
+    <!-- Outermost container -->
+    <div id="container">
+        <div class="screen">
+            <div class="alertBox">
+                <div class="msg"></div>
+                <div class="cross" onclick="exitMsg()">x</div>
+            </div>
+            <div class="inputPart"></div>
+            <div class="outputPart">
+                <div class="outputText"></div>
+                <div class="outputSymbol"></div>
+            </div>
+        </div>
+        <div class="inletBox">
+            <div class="clear inputBut" onclick="build('C')">C</div>
+            <div class="delete inputBut" onclick="build('B')">B</div>
+            <div class="equalTo inputBut" onclick="build('=')">=</div>
+            <div class="operators inputBut" onclick="build('+')">+</div>
+            <div class="numbers inputBut" onclick="build('1')">1</div>
+            <div class="numbers inputBut" onclick="build('2')">2</div>
+            <div class="numbers inputBut" onclick="build('3')">3</div>
+            <div class="operators inputBut" onclick="build('-')">-</div>
+            <div class="numbers inputBut" onclick="build('4')">4</div>
+            <div class="numbers inputBut" onclick="build('5')">5</div>
+            <div class="numbers inputBut" onclick="build('6')">6</div>
+            <div class="operators inputBut" onclick="build('*')">*</div>
+            <div class="numbers inputBut" onclick="build('7')">7</div>
+            <div class="numbers inputBut" onclick="build('8')">8</div>
+            <div class="numbers inputBut" onclick="build('9')">9</div>
+            <div class="operators inputBut" onclick="build('/')">/</div>
+            <div class="operators inputBut bracBut">
+                <div class="brac" onclick="build('(')">(</div>
+                <div class="brac" onclick="build(')')">)</div>                
+            </div>
+            <div class="numbers inputBut" onclick="build('0')">0</div>
+            <div class="operators inputBut" onclick="build('.')">.</div>
+            <div class="operators inputBut" onclick="build('%')">%</div>
+        </div>
+    </div>
+</body>
+</html>
